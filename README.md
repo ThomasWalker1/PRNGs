@@ -42,3 +42,10 @@ from Align_PRNG_Python_Cplusplus import cplusplus_state_from_seed, cplusplus_gen
 
 print(cplusplus_generate_canonical(state=cplusplus_state_from_seed(1), size=5))
 ```
+
+Navigation:
+- Click here to learn more about the languages generate random integers and generate uniform observations from these
+- Click here to learn more about how the languages generate observations from other distributions
+- Click here to learn more about how the languages randomly shuflle and sample from 1-D arrays
+- Click here to find functions for replicating random observations from R in Python
+- Click here to find functions for replicating random observations from C++ in Python
