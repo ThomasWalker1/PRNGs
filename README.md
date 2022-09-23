@@ -44,8 +44,9 @@ print(cplusplus_generate_canonical(state=cplusplus_state_from_seed(1), size=5))
 ```
 
 Navigation:
-- [Click here](https://github.com/ThomasWalker1/PRNGs/blob/main/Reports/Randomly%20Sampling%20and%20Shuffling%201-D%20lists%20in%20Python%20and%20R%20Report.pdf) to learn more about the languages generate random integers and generate uniform observations from these
-- Click here to learn more about how the languages generate observations from other distributions
-- Click here to learn more about how the languages randomly shuflle and sample from 1-D arrays
+-  to learn more about the languages generate random integers and generate uniform observations from these
+- [Click here](https://github.com/ThomasWalker1/PRNGs/blob/main/Reports/Generating%20Normal%20and%20Exponential%20Variates%20in%20Python%2C%20R%20and%20C%2B%2B.pdf) to learn more about how the languages generate observations from other distributions
+- [Click here](https://github.com/ThomasWalker1/PRNGs/blob/main/Reports/Randomly%20Sampling%20and%20Shuffling%201-D%20lists%20in%20Python%20and%20R%20Report.pdf) to learn more about how the languages randomly shuflle and sample from 1-D lists
 - [Click here](https://github.com/ThomasWalker1/PRNGs/blob/main/Code/Align_PRNG_Python_R.py) to find functions for replicating random observations from R in Python
 - [Click here](https://github.com/ThomasWalker1/PRNGs/blob/main/Code/Align_PRNG_Python_Cplusplus.py) to find functions for replicating random observations from C++ in Python
+
