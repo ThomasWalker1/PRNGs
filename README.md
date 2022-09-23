@@ -6,4 +6,39 @@ For example, if we are working in Python and R we note that even if we set the s
 
 ```
 import numpy.random as rng
+from rpy2 import robjects
+
+rng.seed(1)
+print(rng.uniform(size=5))
+
+robjects.r('''
+set.seed(1)
+print(runif(5))
+''')
+```
+
+Similarly, if we run the following code in C++ we obtain discrepencies in the samples observed, despite setting the seed to be $1$ in each of the languages.
+
+```
+#include <iostream>
+#include <random>
+
+int main()
+{
+	std::mt19937 gen(1);
+	for (int n = 0; n < 5; n++) {
+		std::cout << std::generate_canonical<double, std::numeric_limits<double>::digits>(gen)<< '\n';;
+	}
+}
+```
+
+Outlined in this repository are functions to replicate observations obtained in R and C++ in Python. Provided we know the integer seed (let suppose it is $1$ for the examples below) provided in either of these languages (R or C++) we can run the complmentary functions, found within this repository, in Python in order to replicate the observations. 
+```
+from Align_PRNG_Python_R import r_state_from_seed, r_random_uniform
+
+print(r_random_uniform(state=r_state_from_seed(1), size=5))
+
+from Align_PRNG_Python_Cplusplus import cplusplus_state_from_seed, cplusplus_generate_canonical
+
+print(cplusplus_generate_canonical(state=cplusplus_state_from_seed(1), size=5))
 ```
