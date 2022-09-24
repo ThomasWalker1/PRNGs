@@ -50,4 +50,4 @@ Navigation:
 - [Click here](https://github.com/ThomasWalker1/PRNGs/blob/main/Code/Align_PRNG_Python_R.py) to find functions for replicating random observations from R in Python
 - [Click here](https://github.com/ThomasWalker1/PRNGs/blob/main/Code/Align_PRNG_Python_Cplusplus.py) to find functions for replicating random observations from C++ in Python
 
-
+There is a slight exception in regard to generating normal observations in python, read more about that [here](https://github.com/ThomasWalker1/PRNGs/blob/main/Reports/Generating%20Normal%20Variates%20in%20Python.pdf)
