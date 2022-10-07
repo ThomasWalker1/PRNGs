@@ -32,7 +32,7 @@ int main()
 }
 ```
 
-Outlined in this repository are functions to replicate observations obtained in R and C++ in Python. Given that we know the integer seed (let suppose it is $1$ for the examples below) provided in either of these languages (R or C++) we can run the complmentary functions, found within this repository, in Python in order to replicate the observations. 
+Outlined in this repository are functions to replicate observations obtained in R and C++ in Python. Given that we know the integer seed (let suppose it is $1$ for the examples below) provided in either of these languages (R or C++) we can run the complementary functions, found within this repository, in Python in order to replicate the observations. 
 ```
 from Align_PRNG_Python_R import r_state_from_seed, r_random_uniform
 
